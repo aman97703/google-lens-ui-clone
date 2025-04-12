@@ -2,11 +2,6 @@ import { Fragment } from "react";
 import { PiFlaskFill } from "react-icons/pi";
 import { FaGoogle, FaMicrophone, FaGraduationCap } from "react-icons/fa";
 import { RiGeminiFill } from "react-icons/ri";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "../../components/ui/avatar";
 import { IoIosSearch, IoIosMusicalNote } from "react-icons/io";
 import { SiGooglelens } from "react-icons/si";
 import { FaMoon } from "react-icons/fa6";
@@ -17,6 +12,7 @@ import HomeFeatureBox from "../../components/common/HomeFeatureBox";
 import HomeInfotabs from "../../components/common/HomeInfotabs";
 import Posts from "./Posts";
 import Footer from "../../components/common/Footer";
+import UserLoginAvatar from "../../components/common/userLoginAvatar";
 
 interface BaseScreenProps {
   setScreenType: React.Dispatch<
@@ -36,10 +32,7 @@ const BaseScreen: React.FC<BaseScreenProps> = ({ setScreenType }) => {
           </div>
           <RiGeminiFill />
         </div>
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>A</AvatarFallback>
-        </Avatar>
+        <UserLoginAvatar />
       </div>
       <p className="text-center text-3xl mt-8 px-3">Google</p>
       <div className="mt-8 items-center flex h-[60px] rounded-full bg-[#2f3133] px-3 mx-3 gap-3 sticky top-2">
@@ -51,7 +44,7 @@ const BaseScreen: React.FC<BaseScreenProps> = ({ setScreenType }) => {
           onFocus={() => setScreenType("search")}
         />
         <FaMicrophone onClick={() => setScreenType("audio")} />
-        <SiGooglelens className="ml-4" />
+        <SiGooglelens className="ml-4" onClick={() => setScreenType("lens")} />
       </div>
       <div className="grid grid-cols-4 mt-8 gap-4 px-3">
         <HomeFeatureBox

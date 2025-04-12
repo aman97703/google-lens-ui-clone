@@ -128,3 +128,6 @@ body,
 .flex-1 {
   flex: 1;
 }
+[data-state="open"] button[data-dialog-close] {
+  display: none;
+}

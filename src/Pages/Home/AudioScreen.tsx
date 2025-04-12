@@ -11,7 +11,7 @@ import { IoIosArrowBack, IoIosMusicalNote } from "react-icons/io";
 import { AiOutlineGlobal } from "react-icons/ai";
 import TextToSpeechAnimation from "../../components/common/TextToSpeechAnimation";
 import { useNavigate } from "react-router-dom";
-
+import { FaMicrophone } from "react-icons/fa";
 interface audioScreenInterface {
   setScreenType: React.Dispatch<
     React.SetStateAction<"base" | "search" | "audio" | "lens">
@@ -84,7 +84,18 @@ const AudioScreen: React.FC<audioScreenInterface> = ({ setScreenType }) => {
 
       <div className="flex-1 py-10 flex flex-col justify-between items-center gap-20 mt-10">
         <p className="text-lg font-semibold text-gray-400">
-          {isListening ? "Listening..." : "Speak Now"}
+          {isListening ? (
+            "Listening..."
+          ) : (
+            <div className="flex flex-col items-center justify-center">
+              <FaMicrophone
+                size={40}
+                color="red"
+                onClick={() => recognitionRef.current.start()}
+              />
+              <p className="text-base mt-2 text-center">Click on Mic to Start</p>
+            </div>
+          )}
         </p>
 
         <TextToSpeechAnimation />

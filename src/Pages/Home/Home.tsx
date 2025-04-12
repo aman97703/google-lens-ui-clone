@@ -4,11 +4,13 @@ import { useState } from "react";
 import BaseScreen from "./BaseScreen";
 import SearchScreen from "./SearchScreen";
 import AudioScreen from "./AudioScreen";
+import LensScreen from "./LensScreen";
 
 const Home = () => {
   const [screeType, setScreenType] = useState<
     "base" | "search" | "audio" | "lens"
   >("base");
+
   return (
     <div className="py-2 min-h-screen">
       <div className="flex justify-between px-3">
@@ -22,6 +24,8 @@ const Home = () => {
         <SearchScreen setScreenType={setScreenType} />
       ) : screeType === "audio" ? (
         <AudioScreen setScreenType={setScreenType} />
+      ) : screeType === "lens" ? (
+        <LensScreen setScreenType={setScreenType} />
       ) : (
         <BaseScreen setScreenType={setScreenType} />
       )}

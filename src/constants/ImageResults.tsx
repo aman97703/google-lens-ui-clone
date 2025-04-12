@@ -1,0 +1,92 @@
+export const ImageResults = [
+  {
+    id: 1,
+    image: "https://picsum.photos/180/200?random=1",
+    desc: "A beautiful random image",
+    website: "amazon.com",
+  },
+  {
+    id: 2,
+    image: "https://picsum.photos/180/200?random=2",
+    desc: "A scenic view of nature",
+    website: "ebay.com",
+  },
+  {
+    id: 3,
+    image: "https://picsum.photos/180/200?random=3",
+    desc: "A modern architectural design",
+    website: "wikipedia.org",
+  },
+  {
+    id: 4,
+    image: "https://picsum.photos/180/200?random=4",
+    desc: "A serene beach landscape",
+    website: "tripadvisor.com",
+  },
+  {
+    id: 5,
+    image: "https://picsum.photos/180/200?random=5",
+    desc: "A vibrant city skyline",
+    website: "nytimes.com",
+  },
+  {
+    id: 6,
+    image: "https://picsum.photos/180/200?random=6",
+    desc: "A peaceful mountain view",
+    website: "nationalgeographic.com",
+  },
+  {
+    id: 7,
+    image: "https://picsum.photos/180/200?random=7",
+    desc: "A colorful abstract art piece",
+    website: "artstation.com",
+  },
+  {
+    id: 8,
+    image: "https://picsum.photos/180/200?random=8",
+    desc: "A close-up of a blooming flower",
+    website: "gardening.com",
+  },
+  {
+    id: 9,
+    image: "https://picsum.photos/180/200?random=9",
+    desc: "A delicious plate of food",
+    website: "foodnetwork.com",
+  },
+  {
+    id: 10,
+    image: "https://picsum.photos/180/200?random=10",
+    desc: "A cozy living room interior",
+    website: "ikea.com",
+  },
+  {
+    id: 11,
+    image: "https://picsum.photos/180/200?random=11",
+    desc: "A stunning sunset over the ocean",
+    website: "unsplash.com",
+  },
+  {
+    id: 12,
+    image: "https://picsum.photos/180/200?random=12",
+    desc: "A bustling street market",
+    website: "etsy.com",
+  },
+  {
+    id: 13,
+    image: "https://picsum.photos/180/200?random=13",
+    desc: "A tranquil forest path",
+    website: "hiking.com",
+  },
+  {
+    id: 14,
+    image: "https://picsum.photos/180/200?random=14",
+    desc: "A futuristic tech gadget",
+    website: "techcrunch.com",
+  },
+  {
+    id: 15,
+    image: "https://picsum.photos/180/200?random=15",
+    desc: "A classic vintage car",
+    website: "caranddriver.com",
+  },
+];
