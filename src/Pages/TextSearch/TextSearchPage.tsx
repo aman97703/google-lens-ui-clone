@@ -1,11 +1,6 @@
 import moment from "moment";
 import { CiBatteryCharging, CiWifiOn } from "react-icons/ci";
 import { PiFlaskFill } from "react-icons/pi";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "../../components/ui/avatar";
 import { IoIosSearch } from "react-icons/io";
 import { FaMicrophone } from "react-icons/fa";
 import { SiGooglelens } from "react-icons/si";
